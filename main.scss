@@ -1,0 +1,44 @@
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.font-2 {
+    font-size: 2rem;
+}
+
+#input-todo {
+    margin-left: 5px;
+}
+
+#todo-list {
+    padding-right: 40px;
+    li {
+        list-style: none;
+        position: relative;
+        max-width: 500px;
+        width: 100%;
+        padding: 5px 0;
+        &:nth-of-type(2n){
+            background: lightgray;
+        }
+    }
+}
+
+.clicked {
+    text-decoration: line-through;
+    background: rgba(255, 0, 0, 0.5) !important;
+}
+
+.close {
+    margin-left: 5px;
+    font-weight: bolder;
+    color: red;
+    position: absolute;
+    right: 0;
+}
